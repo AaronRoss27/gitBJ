@@ -11,7 +11,30 @@ public class Main{
         }
         return total;
     }
+
+    public static boolean isBlackJack(int total){
+        if(total == 21){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    public static boolean isBust(int total){
+        if(total > 21){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+
+
+
     public static void main(String[] args){
-        System.out.println(dealCards(2));
+        
+        int playerTotal = 0;
+        int dealerTotal = 0;
+        
     }
 }
